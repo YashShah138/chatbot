@@ -1,8 +1,8 @@
-#### got help and some code from the following
+#### Resources Used
     #### https://youtu.be/LX_DXLlaymg
     #### https://youtu.be/pGOyw_M1mNE
     #### https://youtu.be/Vurdg6yrPL8
-    #### 
+    #### ChatGPT API Documentation
 
 
 import requests
@@ -19,11 +19,13 @@ def interact_with_api(api_tags):
         "Authorization": f"Bearer {API_KEY}",
         "Content-Type": "application/json"
     }
-    ### BVody of data sent to api ###
+    ### Body of data sent to api ###
     payload = {
         "messages": [
-            {"role": "system", "content": f"Tags: {api_tags}"},
-            {"role": "user", "content": ""}
+            ### Designates what the ChatGPT is supposed to act as ###
+            {"role": "system", "content": "You are a computer science assistant that generates examples based on tags given to you."},
+            ### This is what is sent to the API ###
+            {"role": "user", "content": f" {api_tags} "}
         ]
     }
     ### POST method to the api ###
