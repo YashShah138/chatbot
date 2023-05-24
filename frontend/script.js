@@ -93,15 +93,7 @@ const handleSubmit = async (e) => {
     loader(messageDiv)
 
     // Send a request to the backend for a response
-    const response = await fetch('https://codex-im0y.onrender.com/', {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-            prompt: data.get('prompt')
-        })
-    })
+    const response = /* connect to backend */
 
     clearInterval(loadInterval)
     messageDiv.innerHTML = " "
