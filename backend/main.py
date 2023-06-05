@@ -10,7 +10,8 @@ import nbformat
 import os
 
 ### Set up ChatGPT API + key ###
-API_KEY = "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"
+with open('api_key.txt', 'r') as file:
+    API_KEY = file.read().strip()
 API_URL = "https://api.openai.com/v1/chat/completions"
 
 ### Function to interact with the API ###
