@@ -97,6 +97,8 @@ def main():
     process_notebooks(notebook_dir)
     process_posts(post_dir)
 
+    print("Program Run Successfully!")
+
 ### Runs program ###
 if __name__ == "__main__":
     main()

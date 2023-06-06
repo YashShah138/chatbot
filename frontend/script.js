@@ -92,7 +92,7 @@ const handleSubmit = async (e) => {
     loader(messageDiv); // Call the loader function to display the loading indicator
 
     // Send a request to the backend for a response
-/////////                            // const response = /* connect to backend */; // Placeholder for the actual backend connection code                    \\\\\\\\
+    // const response = /* connect to backend */; // Placeholder for the actual backend connection code
 
     clearInterval(loadInterval); // Clear the loading indicator interval
     messageDiv.innerHTML = " "; // Clear the loading indicator text
